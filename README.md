@@ -1,1 +1,0 @@
-# lifestuffys.github.io
