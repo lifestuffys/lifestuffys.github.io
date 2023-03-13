@@ -59,7 +59,7 @@ body {
 
 @font-face {
     font-family: "Caveat";
-    src: url("Caveat-VariableFont_wght.ttf") format('truetype');
+    src: url("https://github.com/lifestuffys/lifestuffys.github.io/blob/main/Caveat/Caveat-VariableFont_wght.ttf") format('truetype');
 }
 
 .button {
