@@ -1,13 +1,63 @@
 
 
+html {
+  font-family: Helvetica;
+}
+
 .navbar {
+    position: absolute;
+/*    overflow: hidden;*/
+    background-color: #ffffff;
+    width: 100%;
+/*    top: 2.5%;*/
+    box-shadow: 0px 0px 10px 1px #000000;
+    text-align: center;
     
+}
+
+.navbar a {
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 4px 2vw;
+    float: left;
+/*    display: inline-block;*/
+}
+
+.navbar ul {
+    display: inline-block;
+    list-style: none; 
+}
+
+* html .navbar ul { /* Target IE6 */
+    display: inline;
+}
+*+html .navbar ul { /* Target IE7 */
+    display: inline;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a:hover {
+    color: #000000;
+    border: 4px solid #000000;
+    padding: 0px 2vw;
+    border-radius: 10px;
+    transition: all 0.25s;
+}
+
+.navbar a:not(:hover) {
+    transition: linear 0.25s;
 }
 
 .title_img {
     position: absolute;
     height: 100vh;
-    width: 100%;
+    width: 150%;
     object-fit: cover;
     object-position: center;
     box-shadow: 0px 0px 1000px 50vh #000000;
@@ -18,21 +68,21 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    text-shadow: 2px 2px 8px #696969;
+    text-shadow: 1px 1px 2px #000000, 0 0 15px #ffffff, 0 0 15px #696969;
+
     
+    font-size: 3.8vw;
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-    font-size: 3.8vw;
 }
 
 .background {
-    background-image: url("https://github.com/lifestuffys/lifestuffys.github.io/blob/main/images/background_glitched.png?raw=true");
-    background-position: center center; 
-    background-repeat: repeat-y;
-    background-size: contain;
+    background-image: url("https://github.com/lifestuffys/lifestuffys.github.io/blob/main/images/glitch_pattern_white.png?raw=true");
+    background-size: 20%;
+    background-repeat: repeat;
 }
 
 .webtoon {
@@ -75,7 +125,6 @@ body {
     text-decoration: none;
     color: black;
 
-    transition: all 0.5s;
     cursor: pointer;
     
     position: absolute;
@@ -86,7 +135,7 @@ body {
     cursor: pointer;
 /*    display: inline-block;*/
     position: relative;
-    transition: 0.5s;
+/*    transition: 0.5s;*/
 }
 
 .button span:after {
@@ -99,6 +148,8 @@ body {
 
 .button:hover span {
     padding-right: 20px;
+    transition: all 0.5s;
+
 }
 
 .button:hover span:after {
@@ -109,6 +160,11 @@ body {
 .button:hover {
     background-color: #000000;
     color: #ffffff;
+    transition: all 0.5s;
+}
+
+.button:not(:hover), .button:not(:hover) span {
+    transition: all 0.5s;
 }
 
 .gallery {
