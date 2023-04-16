@@ -59,12 +59,31 @@ html {
 
 
 .title_img {
-    position: absolute;
     height: 100vh;
     width: 100%;
     object-fit: cover;
     object-position: center;
     box-shadow: 0px 0px 1000px 50vh #000000;
+}
+
+.homelogo {
+    position: absolute;
+    object-fit: contain;
+/*    object-position: center;*/
+    
+/*    display: ;*/
+    margin-top: 5vh;
+    height: 100vh;
+    width: 100%;
+
+/*    x*/
+    
+/*    margin-left: 2%;*/
+/*    margin-right: 2%;*/
+/*    width: 50%;*/
+
+
+/*    width: 100%;*/
 }
 
 .title_text {
@@ -94,14 +113,14 @@ html {
 }
 
 .starter_blank {
-    height: 175vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     box-shadow: 0px 0px 15px 3px #212121;
 }
 
 .c {  /* combines panels */
-    display: flex;
+    display: block;
     box-shadow: 0px 0px 15px 3px #212121;
 }
 
@@ -181,4 +200,5 @@ body {
     width: 45vw;
     right: 20%;
 }
+
 
