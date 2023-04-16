@@ -6,13 +6,11 @@ html {
 
 .navbar {
     position: absolute;
-/*    overflow: hidden;*/
     background-color: #ffffff;
     width: 100%;
-/*    top: 2.5%;*/
+    top: 0px;
     box-shadow: 0px 0px 10px 1px #000000;
     text-align: center;
-    
 }
 
 .navbar a {
@@ -57,33 +55,14 @@ html {
 /*.navbar clic*/
 
 
-
-.title_img {
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    box-shadow: 0px 0px 1000px 50vh #000000;
-}
-
 .homelogo {
-    position: absolute;
+/*    position: absolute;*/
+/*    display: block;*/
     object-fit: contain;
-/*    object-position: center;*/
-    
-/*    display: ;*/
-    margin-top: 5vh;
     height: 100vh;
     width: 100%;
-
-/*    x*/
-    
-/*    margin-left: 2%;*/
-/*    margin-right: 2%;*/
-/*    width: 50%;*/
-
-
-/*    width: 100%;*/
+    background-image: linear-gradient(to bottom left, #A8DEF7, #A8DEF7, #F5BED6, #F5BED6);
+    box-shadow: 0px 0px 1000px 45vh #000000;    
 }
 
 .title_text {
@@ -120,7 +99,7 @@ html {
 }
 
 .c {  /* combines panels */
-    display: block;
+    display: inherit;
     box-shadow: 0px 0px 15px 3px #212121;
 }
 
@@ -200,5 +179,4 @@ body {
     width: 45vw;
     right: 20%;
 }
-
 
