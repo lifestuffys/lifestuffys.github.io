@@ -12,36 +12,82 @@
     
     <body>
         
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./gallery.html">Gallery</a>
-            <a href="./services.html">Services</a>
-            <a href="./contact.html">Contact</a>
+        <nav class="navbar">
+            
+            <a href="javascript:openNav();" class="menu">&#9776;</a>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                
+                <a href="./about.html">Hayo LIFE!</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./services.html">Services</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        
+            
+            <a href="./index.html"><img class="logo" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/images/typefont_center.png?raw=true"></a>
+            
+            
+            <a href="https://www.tiktok.com/@life_stuffys" target="_blank"><img class="social" style="padding-right: 20px;" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/images/TikTok_icon.png?raw=true"></a>
+            
+            <a href="https://www.instagram.com/life_stuffys/" target="_blank"><img class="social" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/images/Instagram_icon.png?raw=true"></a>
+            
+            <a href="https://www.facebook.com/life.stuffys/" target="_blank"><img class="social" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/images/Facebook_icon.png?raw=true"></a>
+                
         </nav>
         
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
         
-<!--         add image modal for gallery   -->
+        
+        
+        
+        
+        
+        <div class="gallery_padding">
+            
+            <br>
+            <h1><center>Gallery</center></h1>
+            <br>
+            
+            <div class="row">
+                <div class="column">
                     
-        <h2>Albums</h2>
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/CLAM_Original.png?raw=true" alt="California Los Angeles Mission Logo" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/andres_anime.png?raw=true" alt="Andres drawn in Anime" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/spiderverse.png?raw=true" alt="Spider-Verse" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/cyberhawks.png?raw=true" alt="CyberHawks Logo" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/disney_castle.png?raw=true" alt="Disney Castle" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/hands.png?raw=true" alt="Hands Drawing" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/httyd.png?raw=true" alt="How to Train Your Dragon Drawing" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/jl_logo.png?raw=true" alt="JL Logo" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/mrbubbleman_pt1.png?raw=true" alt="Mr. Bubbleman Doodles Pt 1" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/mrbubbleman_pt2.png?raw=true" alt="Mr. Bubbleman Doodles Pt 2" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/vibes.png?raw=true" alt="Vibes Playlist" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/nezuko.png?raw=true" alt="Nezuko" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/ohashi_rinda_digital.png?raw=true" alt="Ohashi Rinda (Digital)" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/ohashi_rinda_paper.png?raw=true" alt="Ohashi Rinda (Paper)" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/saitama_x_nezuko.png?raw=true" alt="Saitama x Nezuko" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/stormtrooper.png?raw=true" alt="Stormtrooper" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/christ.png?raw=true" alt="Christ" width="24%" height="auto">
-        <img src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/tanjiro_slaying_rui.png?raw=true" alt="Tanjiro slaying Rui" width="73%" height="auto">
+                </div>
+            </div>
+            
+            
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/CLAM_Original.png?raw=true" alt="California Los Angeles Mission Logo">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/andres_anime.png?raw=true" alt="Andres drawn in Anime">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/spiderverse.png?raw=true" alt="Spider-Verse">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/cyberhawks.png?raw=true" alt="CyberHawks Logo">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/disney_castle.png?raw=true" alt="Disney Castle">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/hands.png?raw=true" alt="Hands Drawing">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/httyd.png?raw=true" alt="How to Train Your Dragon Drawing">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/jl_logo.png?raw=true" alt="JL Logo">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/mrbubbleman_pt1.png?raw=true" alt="Mr. Bubbleman Doodles Pt 1">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/mrbubbleman_pt2.png?raw=true" alt="Mr. Bubbleman Doodles Pt 2">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/vibes.png?raw=true" alt="Vibes Playlist">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/nezuko.png?raw=true" alt="Nezuko">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/ohashi_rinda_digital.png?raw=true" alt="Ohashi Rinda (Digital)">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/ohashi_rinda_paper.png?raw=true" alt="Ohashi Rinda (Paper)">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/saitama_x_nezuko.png?raw=true" alt="Saitama x Nezuko">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/stormtrooper.png?raw=true" alt="Stormtrooper">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/christ.png?raw=true" alt="Christ">
+            <img class="square_img" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/albums/tanjiro_slaying_rui.png?raw=true" alt="Tanjiro slaying Rui">
+            
+        </div>
+
+        
+        
         
         
         
