@@ -12,15 +12,43 @@
     
     <body>
         
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./gallery.html">Gallery</a>
-            <a href="./services.html">Services</a>
-            <a href="./contact.html">Contact</a>
+        <nav class="navbar">
+            
+            <a href="javascript:openNav();" class="menu">&#9776;</a>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                
+                <a href="./about.html">Hayo LIFE!</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./services.html">Services</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        
+            
+            <a href="./index.html"><img class="logo" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/images/typefont_center.png?raw=true"></a>
+            
+            
+            <a href="https://www.tiktok.com/@life_stuffys" target="_blank"><img class="social" style="padding-right: 20px;" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/images/TikTok_icon.png?raw=true"></a>
+            
+            <a href="https://www.instagram.com/life_stuffys/" target="_blank"><img class="social" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/images/Instagram_icon.png?raw=true"></a>
+            
+            <a href="https://www.facebook.com/life.stuffys/" target="_blank"><img class="social" src="https://github.com/lifestuffys/lifestuffys.github.io/blob/main/images/Facebook_icon.png?raw=true"></a>
+                
         </nav>
         
-        <h2>Hayo LIFE! :P</h2>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        
+        
+        <h2>Hayo LIFE!</h2>
         <h4>Origins</h4>
         <p>Started on February 16, 2023, LIFE Stuffys is a freelance graphic design business. Any illustration—whether hand-drawn or digital—or logo you need, we sketch your ideas to life!</p>
 
