@@ -4,7 +4,12 @@ html {
   font-family: Helvetica;
 }
 
-.navbar {
+
+/*   -------------------   */
+/*   |  HOME NAV BAR   |   */
+/*   -------------------   */
+
+.home_navbar {
     position: absolute;
     background-color: #ffffff;
     width: 100%;
@@ -13,7 +18,7 @@ html {
     text-align: center;
 }
 
-.navbar a {
+.home_navbar a {
     color: #555;
     font-weight: bold;
     text-align: center;
@@ -24,23 +29,23 @@ html {
 /*    display: inline-block;*/
 }
 
-.navbar ul {
+.home_navbar ul {
     display: inline-block;
     list-style: none; 
 }
 
-* html .navbar ul { /* Target IE6 */
+* html .home_navbar ul { /* Target IE6 */
     display: inline;
 }
-*+html .navbar ul { /* Target IE7 */
-    display: inline;
-}
-
-.navbar li {
+*+html .home_navbar ul { /* Target IE7 */
     display: inline;
 }
 
-.navbar a:hover {
+.home_navbar li {
+    display: inline;
+}
+
+.home_navbar a:hover {
     color: #000000;
     border: 4px solid #000000;
     padding: 0px 2vw;
@@ -48,11 +53,16 @@ html {
     transition: all 0.25s;
 }
 
-.navbar a:not(:hover) {
+.home_navbar a:not(:hover) {
     transition: linear 0.25s;
 }
 
 /*.navbar clic*/
+
+
+/*   -------------------   */
+/*   |    HOME PAGE    |   */
+/*   -------------------   */
 
 
 .homelogo {
@@ -81,6 +91,11 @@ html {
     transform: translate(-50%, -50%);
 }
 
+
+/*   -------------------   */
+/*   |   HOME PANELS   |   */
+/*   -------------------   */
+
 .background {
     background-image: url("https://github.com/lifestuffys/lifestuffys.github.io/blob/main/images/glitch_pattern_white.png?raw=true");
     background-size: 20%;
@@ -88,7 +103,7 @@ html {
 }
 
 .webtoon {
-    padding: 0px 10vw 96px;  
+    padding: 0px 17.5vw 96px;  
 }
 
 .starter_blank {
@@ -113,6 +128,10 @@ body {
     font-family: "Caveat";
     src: url("Caveat-VariableFont_wght.ttf") format('truetype');
 }
+
+/*   -------------------   */
+/*   |     BUTTONS     |   */
+/*   -------------------   */
 
 .button {
     background-color: #ffffff;
@@ -179,4 +198,137 @@ body {
     width: 45vw;
     right: 20%;
 }
+
+
+
+
+/*   -------------------   */
+/*   |     NAV BAR     |   */
+/*   -------------------   */
+
+.navbar {
+    position: sticky;
+    background-color: #ffffff;
+    width: 100%;
+/*    height: 10vh;*/
+    height: 100px;
+
+    top: 0px;
+    box-shadow: 0px 0px 10px 1px #000000;
+    text-align: center;
+    display: inline-block;
+
+}
+
+
+
+/*   -------------------   */
+/*   |  SIDE NAV BAR   |   */
+/*   -------------------   */
+
+.menu {
+    height: 90px;
+    font-size: 5vh;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 25px 0px;
+    float: left;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    text-align: left;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ffffff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*
+@media screen and (max-height: 450px) {
+    .sidenav { padding-top: 15px; }
+    .sidenav a { font-size: 18px; }
+}
+*/
+
+
+
+/*   -------------------   */
+/*   |   NAV BAR LOGO  |   */
+/*   -------------------   */
+
+.logo {
+    height: 80px;
+    padding: 10px 0px 10px 110px;    
+}
+
+
+
+/*   -------------------   */
+/*   |    NAV SOCIAL   |   */
+/*   -------------------   */
+
+.social {
+    float: right;
+    height: 50px;
+    padding: 25px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   -------------------   */
+/*   |   GALLERY IMGS  |   */
+/*   -------------------   */
+
+
+.gallery_padding {
+    padding: 0px 20vw 96px;  
+}
+
+
+.square_img {
+    width: 19vw;
+    height: 18.3vw;
+    object-fit: cover;
+/*    padding: 0.5vw;*/
+}
+
+
 
