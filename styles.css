@@ -1,7 +1,17 @@
+:root {
+    --life-white: #ffffff;
+    --life-gray: #bfbfbf;
+    --life-black: #000000;
+    --bubblemanpink: #f8c1d9;
+    --bubblemanblue: #abe1fa;
+    
+/*    var(--test)*/
+}
+
 
 
 html {
-  font-family: Helvetica;
+    font-family: Helvetica;
 }
 
 
@@ -11,10 +21,10 @@ html {
 
 .home_navbar {
     position: absolute;
-    background-color: #ffffff;
+    background-color: var(--life-white);
     width: 100%;
     top: 0px;
-    box-shadow: 0px 0px 10px 1px #000000;
+    box-shadow: 0px 0px 10px 1px var(--life-black);
     text-align: center;
 }
 
@@ -47,7 +57,7 @@ html {
 
 .home_navbar a:hover {
     color: #000000;
-    border: 4px solid #000000;
+    border: 4px solid var(--life-black);
     padding: 0px 2vw;
     border-radius: 10px;
     transition: all 0.25s;
@@ -71,8 +81,8 @@ html {
     object-fit: contain;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to bottom left, #A8DEF7, #A8DEF7, #F5BED6, #F5BED6);
-    box-shadow: 0px 0px 1000px 45vh #000000;    
+    background-image: linear-gradient(to bottom left, var(--bubblemanblue), var(--bubblemanblue), var(--bubblemanpink), var(--bubblemanpink));
+    box-shadow: 0px 0px 1000px 45vh var(--life-black);    
 }
 
 .title_text {
@@ -80,7 +90,7 @@ html {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    text-shadow: 1px 1px 2px #000000, 0 0 15px #ffffff, 0 0 15px #696969;
+    text-shadow: 1px 1px 2px var(--life-black), 0 0 15px var(--life-white), 0 0 15px #696969;
 
     
     font-size: 3.8vw;
@@ -119,25 +129,21 @@ html {
 }
 
 body {
-    font-family: comic sans ms;
     margin: 0px;
-/*    font-family: Caveat;*/
 }
 
-@font-face {
-    font-family: "Caveat";
-    src: url("Caveat-VariableFont_wght.ttf") format('truetype');
-}
+
+
 
 /*   -------------------   */
 /*   |     BUTTONS     |   */
 /*   -------------------   */
 
 .button {
-    background-color: #ffffff;
-    border: 0.75vw solid #000000;
+    background-color: var(--life-white);
+    border: 0.75vw solid var(--life-black);
     border-radius: 15px;
-    color: #000000;
+    color: var(--life-black);
 
     font-family: Caveat;
     font-weight: bold;
@@ -179,8 +185,8 @@ body {
 }
 
 .button:hover {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--life-black);
+    color: var(--life-white);
     transition: all 0.5s;
 }
 
@@ -189,7 +195,6 @@ body {
 }
 
 .gallery {
-/*    right: 20%;*/
     left: 47%;
     width: 40vw;
 }
@@ -206,17 +211,15 @@ body {
 /*   |     NAV BAR     |   */
 /*   -------------------   */
 
-.navbar {
-    position: sticky;
-    background-color: #ffffff;
+.navbar {    
+    position: absolute;    
+    background-color: var(--life-white);
     width: 100%;
-/*    height: 10vh;*/
     height: 100px;
-
     top: 0px;
     box-shadow: 0px 0px 10px 1px #000000;
     text-align: center;
-    display: inline-block;
+/*    display: inline-block;*/
 
 }
 
@@ -227,12 +230,13 @@ body {
 /*   -------------------   */
 
 .menu {
-    height: 90px;
-    font-size: 5vh;
-    color: #000000;
+/*    height: 90px;*/
+    font-size: 50px;
+    color: var(--life-black);
     text-decoration: none;
-    padding: 10px 25px 0px;
+    padding: 10px 25px 20px;
     float: left;
+
 }
 
 .sidenav {
@@ -289,7 +293,6 @@ body {
 }
 
 
-
 /*   -------------------   */
 /*   |    NAV SOCIAL   |   */
 /*   -------------------   */
@@ -301,10 +304,44 @@ body {
 }
 
 
+/*   -------------------   */
+/*   |     ABOUT US    |   */
+/*   -------------------   */
+
+.about_padding {
+    padding: 20px 50px;
+    background-color: var(--life-white);
+}
+
+.about_banner_text {
+    padding-left: 10vw;
+    padding-top: 2vw;
+    font-size: 10vw;
+    position: absolute;
+    color: var(--life-white);
+    text-shadow: 3px 3px 3px var(--life-black);
+}
+
+.about_bubbleman {
+    width: 100vw;
+    float: right;
+    padding: 20px 0px 30px;
+
+
+}
+
+.polaroid {
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/*  margin-bottom: 25px;*/
+}
 
 
 
-
+.profile {
+    height: 250px;
+    width: 250px;  
+}
 
 
 
@@ -317,17 +354,40 @@ body {
 /*   |   GALLERY IMGS  |   */
 /*   -------------------   */
 
-
 .gallery_padding {
-    padding: 0px 20vw 96px;  
+    padding: 0px 20vw 96px;
+}
+
+.square_img {
+    width: 18.3vw;
+    height: 18.3vw;
+    object-fit: cover;
+}
+
+.square_img:hover {
+    transform: scale(0.9);
+    opacity: 0.9;
+    transition: all 0.2s;
+}
+
+.square_img:not(:hover) {
+    transition: all 0.2s;
 }
 
 
-.square_img {
-    width: 19vw;
-    height: 18.3vw;
-    object-fit: cover;
-/*    padding: 0.5vw;*/
+
+
+
+/*   -------------------   */
+/*   |      BOTTOM     |   */
+/*   -------------------   */
+
+
+.bottom {
+    padding: 50px;
+    
+/*    Add contact and social*/
+    
 }
 
 
