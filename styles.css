@@ -35,11 +35,8 @@ html {
     text-align: center;
     text-decoration: none;
     font-size: 30px;
-/*    padding: 4px 2vw;*/
     padding: 15px 3vw 15px;
-
     float: left;
-/*    display: inline-block;*/
 }
 
 .home_navbar ul {
@@ -357,32 +354,16 @@ body {
 /*   |   GALLERY IMGS  |   */
 /*   -------------------   */
 
-
-
-@media screen and (max-width: 1000px) {
-    
-    .gallery_padding {
-        padding: 0px 0px 96px;
-        background-color: lightblue;
-    }
-    
-    .square_img {
-    width: 30vw;
-    height: 30vw;
-    object-fit: cover;
-}
-    
-}
-
-
 .gallery_padding {
-    padding: 0px 20vw 96px;
+    padding: 0px 19vw 96px;
 }
 
 .square_img {
-    width: 18.3vw;
-    height: 18.3vw;
+    width: 20vw;
+    height: 20vw;
     object-fit: cover;
+    align-items: center;
+
 }
 
 .square_img:hover {
@@ -396,6 +377,18 @@ body {
 }
 
 
+@media screen and (max-width: 750px) {
+    
+    .gallery_padding {
+        padding: 0px 0px 96px;
+    }
+    
+    .square_img {
+    width: 32.7vw;
+    height: 32.7vw;
+    object-fit: cover;
+    }
+}
 
 
 
