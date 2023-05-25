@@ -274,13 +274,6 @@ body {
     margin-left: 50px;
 }
 
-/*
-@media screen and (max-height: 450px) {
-    .sidenav { padding-top: 15px; }
-    .sidenav a { font-size: 18px; }
-}
-*/
-
 
 
 /*   -------------------   */
@@ -377,19 +370,6 @@ body {
 }
 
 
-@media screen and (max-width: 850px) {
-    
-    .gallery_padding {
-        padding: 0px 0px 96px;
-    }
-    
-    .square_img {
-    width: 32.7vw;
-    height: 32.7vw;
-    object-fit: cover;
-    }
-}
-
 
 
 /*   -------------------   */
@@ -402,6 +382,34 @@ body {
     
 /*    Add contact and social*/
     
+}
+
+
+
+
+
+
+
+
+/*   -------------------   */
+/*   |   TINY VERSION  |   */
+/*   -------------------   */
+
+@media screen and (max-width: 850px) {
+    
+    .webtoon {
+        padding: 0px 0px 96px;  
+    }
+    
+    .gallery_padding {
+        padding: 0px 0px 96px;
+    }
+    
+    .square_img {
+        width: 32.7vw;
+        height: 32.7vw;
+        object-fit: cover;
+    }
 }
 
 
