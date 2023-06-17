@@ -1,14 +1,11 @@
 :root {
     --life-white: #ffffff;
-    --life-gray: #bfbfbf;
+    --life-lightgray: #bfbfbf;
+    --life-darkgray: #707070;
     --life-black: #000000;
     --bubblemanpink: #f8c1d9;
     --bubblemanblue: #abe1fa;
-    
-/*    var(--test)*/
 }
-
-
 
 html {
     font-family: Helvetica;
@@ -16,56 +13,70 @@ html {
 
 
 /*   -------------------   */
-/*   |  HOME NAV BAR   |   */
+/*   |     NAV BAR     |   */
 /*   -------------------   */
 
-.home_navbar {
+.navbar {
     position: absolute;
     background-color: var(--life-white);
     width: 100%;
-    height: 100px;
+    height: 150px;
     top: 0px;
-    box-shadow: 0px 0px 10px 1px var(--life-black);
+    box-shadow: 0px 0px 5px 2.5px var(--life-darkgray);
     text-align: center;
 }
 
-.home_navbar a {
-    color: #555;
+.logo {
+    position: absolute;
+    display: block;
+    left: 38%;
+    padding: 25px 0px 25px;
+    width: 25%;
+}
+
+.social { float: right; padding: 50px; }
+
+.social a { opacity: 50%; }
+
+.social a:hover { opacity: 100%; transition: all 0.25s; }
+
+.social a:not(:hover) { transition: linear 0.25s; }
+
+.text {
+    position: absolute;
+    width: 100%;
+    padding: 80px 0px 40px;
+    text-align: center;
+}
+
+.text a {
+    color: var(--life-darkgray);
     font-weight: bold;
-    text-align: center;
     text-decoration: none;
-    font-size: 30px;
-    padding: 15px 3vw 15px;
-    float: left;
+    font-size: 25px;
+    padding: 0px 15px;
 }
 
-.home_navbar ul {
-    display: inline-block;
-    list-style: none; 
-}
-
-* html .home_navbar ul { /* Target IE6 */
-    display: inline;
-}
-*+html .home_navbar ul { /* Target IE7 */
-    display: inline;
-}
-
-.home_navbar li {
-    display: inline;
-}
-
-.home_navbar a:hover {
+.text a:hover {
     color: var(--life-black);
-    padding: 10px 3vw 15px;
-
-    border-radius: 10px;
     transition: all 0.25s;
 }
 
-.home_navbar a:not(:hover) {
-    transition: linear 0.25s;
+.text a:not(:hover) { transition: linear 0.25s; }
+
+
+
+
+
+
+.navbar a.active {
+/*    background-color: var(--life-white);*/
+    color: white;
 }
+
+
+
+
 
 /*.navbar clic*/
 
@@ -76,10 +87,9 @@ html {
 
 
 .homelogo {
-/*    position: absolute;*/
-/*    display: block;*/
     object-fit: contain;
-    height: 100vh;
+    padding: 100px 0px 0px;
+    height: calc(100vh - 75px);
     width: 100%;
     background-image: linear-gradient(to bottom left, var(--bubblemanblue), var(--bubblemanblue), var(--bubblemanpink), var(--bubblemanpink));
     box-shadow: 0px 0px 1000px 45vh var(--life-black);    
@@ -207,95 +217,6 @@ body {
 
 
 
-/*   -------------------   */
-/*   |     NAV BAR     |   */
-/*   -------------------   */
-
-.navbar {    
-    position: absolute;    
-    background-color: var(--life-white);
-    width: 100%;
-    height: 100px;
-    top: 0px;
-    box-shadow: 0px 0px 10px 1px #000000;
-    text-align: center;
-/*    display: inline-block;*/
-
-}
-
-
-
-/*   -------------------   */
-/*   |  SIDE NAV BAR   |   */
-/*   -------------------   */
-
-.menu {
-/*    height: 90px;*/
-    font-size: 50px;
-    color: var(--life-black);
-    text-decoration: none;
-    padding: 10px 25px 20px;
-    float: left;
-
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    text-align: left;
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #ffffff;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-
-
-/*   -------------------   */
-/*   |   NAV BAR LOGO  |   */
-/*   -------------------   */
-
-.logo {
-    height: 80px;
-    padding: 10px 0px 10px 110px;    
-}
-
-
-/*   -------------------   */
-/*   |    NAV SOCIAL   |   */
-/*   -------------------   */
-
-.social {
-    float: right;
-    height: 50px;
-    padding: 25px 5px;
-}
-
 
 /*   -------------------   */
 /*   |     ABOUT US    |   */
@@ -319,9 +240,31 @@ body {
     width: 100vw;
     float: right;
     padding: 20px 0px 30px;
-
-
+    box-shadow: inset 0px 0px 5px 2.5px var(--life-darkgray);
 }
+
+.about_grid {
+    padding: 0px 20px;
+    text-align: left;
+}
+
+.profile {
+    height: 40vw;
+    width: 40vw;
+    object-fit: cover;
+}
+
+h2 {
+    width: 40vw;
+}
+
+p {
+    font-size: 17px;
+}
+
+
+
+
 
 .polaroid {
   width: 200px;
@@ -331,10 +274,6 @@ body {
 
 
 
-.profile {
-    height: 250px;
-    width: 250px;  
-}
 
 
 
@@ -347,13 +286,28 @@ body {
 /*   |   GALLERY IMGS  |   */
 /*   -------------------   */
 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px;
+}
+
+.grid-item {
+/*    background-color: rgba(255, 255, 255, 0.8);*/
+/*    border: 1px solid rgba(0, 0, 0, 0.8);*/
+    padding: 0px;
+    text-align: center;
+}
+
+
 .gallery_padding {
-    padding: 0px 19vw 96px;
+    padding: 0px 12vw 96px;
 }
 
 .square_img {
-    width: 20vw;
-    height: 20vw;
+    width: 25vw;
+    height: 25vw;
     object-fit: cover;
     align-items: center;
 
@@ -406,11 +360,14 @@ body {
     }
     
     .square_img {
-        width: 32.7vw;
-        height: 32.7vw;
+        width: 32.6vw;
+        height: 32.6vw;
         object-fit: cover;
     }
 }
+
+
+
 
 
 
