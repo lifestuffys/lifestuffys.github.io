@@ -12,6 +12,45 @@ html {
 }
 
 
+
+/*   -------------------   */
+/*   |    TYPOGRAPHY   |   */
+/*   -------------------   */
+
+
+/*Text*/
+p {
+    font-size: 15px;
+    color: var(--life-black);
+}
+
+
+/*Sub-Headings*/
+.subheading {
+    font-size: 25px;
+    color: var(--life-black);
+    text-decoration: none;
+}
+
+/*Headings*/
+.heading
+{
+    font-size: 35px;
+    color: var(--life-black);
+    font-weight: bold;
+}
+
+/*Banner Titles*/
+h1 {
+    font-size: 10vw;
+    color: var(--life-white);
+    text-shadow: 3px 3px 3px var(--life-black);
+}
+
+
+
+
+
 /*   -------------------   */
 /*   |     NAV BAR     |   */
 /*   -------------------   */
@@ -57,22 +96,11 @@ html {
     padding: 0px 15px;
 }
 
-.text a:hover {
-    color: var(--life-black);
-    transition: all 0.25s;
-}
+.text a:hover { color: var(--life-black); transition: all 0.25s; }
 
 .text a:not(:hover) { transition: linear 0.25s; }
 
 
-
-
-
-
-.navbar a.active {
-/*    background-color: var(--life-white);*/
-    color: white;
-}
 
 
 
@@ -95,21 +123,6 @@ html {
     box-shadow: 0px 0px 1000px 45vh var(--life-black);    
 }
 
-.title_text {
-    color: #ffffff;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 1px 1px 2px var(--life-black), 0 0 15px var(--life-white), 0 0 15px #696969;
-
-    
-    font-size: 3.8vw;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 
 /*   -------------------   */
@@ -219,58 +232,66 @@ body {
 
 
 /*   -------------------   */
-/*   |     ABOUT US    |   */
+/*   |     BANNERS     |   */
 /*   -------------------   */
 
-.about_padding {
-    padding: 20px 50px;
-    background-color: var(--life-white);
+.banner {
+    width: 100vw;
+    box-shadow: inset 0px -4px 5px var(--life-darkgray);
+}
+
+.banner_image {
+    width: 100vw;
+    position: relative;
+    z-index: -2;
 }
 
 .about_banner_text {
     padding-left: 10vw;
-    padding-top: 2vw;
-    font-size: 10vw;
+    padding-top: 150px;
     position: absolute;
-    color: var(--life-white);
-    text-shadow: 3px 3px 3px var(--life-black);
 }
 
-.about_bubbleman {
-    width: 100vw;
-    float: right;
-    padding: 20px 0px 30px;
-    box-shadow: inset 0px 0px 5px 2.5px var(--life-darkgray);
-}
-
-.about_grid {
-    padding: 0px 20px;
+.right_text {
+    padding-left: 55vw;
     text-align: left;
+    padding-top: 225px;
+    position: absolute;
+}
+
+
+
+/*   -------------------   */
+/*   |     ABOUT US    |   */
+/*   -------------------   */
+
+.about_padding {
+    padding: 20px 200px;
+    background-color: var(--life-white);
+}
+
+.profile_img {
+    height: 40%;
+    width: 40%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .profile {
-    height: 40vw;
-    width: 40vw;
-    object-fit: cover;
+    padding: 20px 200px 100px;
+    background-color: var(--life-white);
+    vertical-align: middle;
+
 }
 
-h2 {
-    width: 40vw;
+.about_text {
+    width: 50%;
+    height: 40%;
+    padding: 0px 50px;
 }
 
-p {
-    font-size: 17px;
-}
 
 
-
-
-
-.polaroid {
-  width: 200px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-/*  margin-bottom: 25px;*/
-}
 
 
 
