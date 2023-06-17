@@ -281,7 +281,6 @@ body {
     padding: 20px 200px 100px;
     background-color: var(--life-white);
     vertical-align: middle;
-
 }
 
 .about_text {
@@ -314,34 +313,27 @@ body {
     padding: 0px;
 }
 
+grid-container img {
+    padding: 10px 0px;
+}
+
 .grid-item {
-/*    background-color: rgba(255, 255, 255, 0.8);*/
-/*    border: 1px solid rgba(0, 0, 0, 0.8);*/
-    padding: 0px;
+    padding: 10px 0px;
     text-align: center;
 }
 
 
 .gallery_padding {
-    padding: 0px 12vw 96px;
+    padding: 0px 17.5vw 96px;
+
 }
 
 .square_img {
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
     object-fit: cover;
     align-items: center;
-
-}
-
-.square_img:hover {
-    transform: scale(0.9);
-    opacity: 0.9;
-    transition: all 0.2s;
-}
-
-.square_img:not(:hover) {
-    transition: all 0.2s;
+    border-radius: 10px;
 }
 
 
@@ -385,6 +377,12 @@ body {
         height: 32.6vw;
         object-fit: cover;
     }
+    
+    .grid-item {
+        padding: 0px 0px;
+        text-align: center;
+    }
+
 }
 
 
