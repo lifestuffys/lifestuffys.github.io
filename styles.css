@@ -18,7 +18,7 @@ html { font-family: Helvetica; }
 
 /*Text*/
 p {
-    font-size: 15px;
+    font-size: 17px;
     color: var(--life-black);
 }
 
@@ -313,12 +313,55 @@ grid-container img { padding: 10px 0px; }
 
 
 
+/*   -------------------   */
+/*   |     CONTACT     |   */
+/*   -------------------   */
+
+.contact_padding { padding: 96px 25vw 150px; }
+
+.contact_spacing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+select { color: var(--life-darkgray); }
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 30px;
+    display: inline-block;
+    border: 1px solid var(--life-lightgray);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    font-family: Helvetica;
+    border: 1px solid var(--life-lightgray);
+    border-radius: 10px;
+    margin: 8px 0 30px;
+    padding: 12px 20px;
+    width: calc(100% - 40px);
+    resize: none;
+}
 
 
 
 
 /*   -------------------   */
-/*   |      BOTTOM     |   */
+/*   |      FOOTER     |   */
 /*   -------------------   */
 
 
