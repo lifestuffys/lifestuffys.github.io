@@ -10,6 +10,8 @@
 
 html { font-family: Helvetica; }
 
+body { margin: 0px; }
+
 
 
 /*   -------------------   */
@@ -111,37 +113,71 @@ h1 {
     box-shadow: 0px 0px 1000px 45vh var(--life-black);    
 }
 
-
-
-/*   -------------------   */
-/*   |   HOME PANELS   |   */
-/*   -------------------   */
-
 .background {
     background-image: url("https://github.com/lifestuffys/lifestuffys.github.io/blob/main/images/glitch_pattern_white.png?raw=true");
     background-size: 20%;
     background-repeat: repeat;
 }
 
-.webtoon { padding: 0px 17.5vw 96px; }
+.webtoon_padding { padding: 0px 17.5vw; }
 
-.starter_blank {
-    height: 90vh;
-    width: 100%;
-    display: flex;
-    box-shadow: 0px 0px 15px 3px #212121;
+.webtoon-container {
+    grid-template-columns: auto;
+    padding: 0px;
+    box-shadow: 12px 0 15px -10px var(--life-black), -12px 0 8px -10px var(--life-black);
 }
 
-/* combines panels */
-.c { display: inherit; box-shadow: 0px 0px 15px 3px #212121; }
+.panel_img {
+    display: flex;
+    width: 100%;
+}
 
-body { margin: 0px; }
+.webtoon_button a {
+    background-color: var(--life-white);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0px 0px 250px;
+    text-decoration: none;
+}
 
+.webtoon_button button { font-size: 60px; }
+
+
+
+
+
+    
 
 
 /*   -------------------   */
 /*   |     BUTTONS     |   */
 /*   -------------------   */
+
+.black_button {
+    background-color: var(--life-white);
+    border: 5px solid var(--life-black);
+    border-radius: 10px;
+    color: var(--life-black);
+    
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 1vh 1.5vh;
+}
+
+.black_button:hover {
+    background-color: var(--life-black);
+    color: var(--life-white);
+    transition: all 0.5s;
+}
+
+.black_button:not(:hover) { transition: all 0.5s; }
+
 
 .blue_button {
     background-color: var(--life-white);
